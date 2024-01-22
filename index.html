@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dev-them="light">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,21 +9,32 @@
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+<style>
+    .font-manrope{
+        font-family: 'Manrope', sans-serif;
+    }
+</style>
+
 </head>
-<body>
-    <header>
+<body class=" px-6 mx-auto font-manrope">
+    <header class=" ">
         <!-- baner-section -->
-        <section class="container my-24 mx-6 ">
-            <div class="carousel w-full h-[550px]">
+        <section class="container mt-12 lg:pl-20 lg:pr-12 ">
+            <div class="carousel h-[550px]">
                 <div id="slide1" class="carousel-item relative w-full">
-                  <img src="Images/1.png" class="w-full" />
+                  <img src="Images/1.png" class="w-full"/>
                   <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide4" class="btn btn-circle">❮</a> 
-                    <a href="#slide2" class="btn btn-circle">❯</a>
+                    <a href="#slide2" class="btn btn-circle" >❯</a>
                   </div>
                 </div> 
                 <div id="slide2" class="carousel-item relative w-full">
-                  <img src="Images/baner2.jpg" class="w-full" />
+                  <img src="Images/baner2.jpg" class="w-full rounded-xl"/>
                   <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide1" class="btn btn-circle">❮</a> 
                     <a href="#slide3" class="btn btn-circle">❯</a>
@@ -32,10 +43,120 @@
                 
                 
               </div>
-        </section>
-         
+              <div class="h-40 lg:w-2/5 mx-auto bg-black rounded-2xl p-7 space-y-3 lg:-translate-y-48 lg:translate-x-72">
+                <h1 class="text-white text-2xl font-extrabold">Meet all the heroes from the field</h1>
+                <p class="text-[#ffffff99]">Field heroes, relentless passion, resilience, unity, triumph <br>
+                   through adversity, inspiring greatness.</p>
+
+              </div>
+        </section>    
     </header>
     <main>
+      <!-- professional section -->
+      <section  class="container  lg:pl-20 lg:pr-12 space-y-3">
+        <h1 class="text-3xl font-extrabold text-center"> Professional Hockeys Club</h1>
+        <p class="text-[ #13131899] text-center">Elite athletes clash on ice, pursuing glory <br> in Professional Hockey Clubs.</p>
+        <div class="lg:flex pt-5">
+          <!-- card-1 -->
+          <div class="card w-96 ">
+            <figure class="px-10 pt-10">
+             <div class="w-32 h-32 bg-no-repeat" style="background-image: url(Images/g1.png);">
+              <p class="text-2xl font-extrabold text-center py-10">87%</p>
+             </div>
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-xl font-semibold text-center">Prayer Facility</h2>
+              <p>An experienced coach brings a wealth of knowledge, skill.</p>
+              
+            </div>
+          </div>
+            <!-- card-2 -->
+            <div class="card w-96 ">
+              <figure class="px-10 pt-10">
+               <div class="w-32 h-32 bg-no-repeat" style="background-image: url(Images/g2.png);">
+                <p class="text-2xl font-extrabold text-center py-10">95%</p>
+               </div>
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title text-xl font-semibold text-center">Experienced Coach</h2>
+                <p>The prayer facility exudes a sacred, tranquil atmosphere.</p>
+                
+              </div>
+            </div>
+            
+            <!-- card-3 -->
+            <div class="card w-96 ">
+              <figure class="px-10 pt-10">
+               <div class="w-32 h-32 bg-no-repeat" style="background-image: url(Images/g3.png);">
+                <p class="text-2xl font-extrabold text-center py-10">90%</p>
+               </div>
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title text-xl font-semibold text-center">Senior Player</h2>
+                <p>A senior player, seasoned through years of dedicated .</p>
+                
+              </div>
+            </div>
+            
+
+           
+
+            <!-- card-4 -->
+            <div class="card w-96 ">
+              <figure class="px-10 pt-10">
+               <div class="w-32 h-32 bg-no-repeat" style="background-image: url(Images/g4.png);">
+                <p class="text-2xl font-extrabold text-center py-10">80%</p>
+               </div>
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title text-xl font-semibold text-center">Training Ground</h2>
+                <p class="text-[ #13131899] text-center">   A training ground serves as the essential .</p>
+                
+              </div>
+            </div>
+            <!--  -->
+            
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+
+      </section>
+      <!-- programer section -->
+      <section class="container  lg:pl-20 lg:pr-12 space-y-3">
+        <h1 class="text-2xl text-center font-extrabold">Programe Section</h1>
+        <p class="font-medium text-center ">The program section efficiently coordinates schedules, ensuring <br> seamless execution and success.</p>
+
+        <div class="lg:flex justify-center gap-6 ">
+          <div style="background-size: cover; background-image: url(Images/2.png); ;" class="my-2 bg-no-repeat h-96 px-8 ppy-8  lg:pt-24 lg:px-14 space-y-3 lg:space-y-7 rounded-2xl">
+            <h1 class="text-[#fff] text-2xl font-extrabold">Junior Program</h1>
+            <p class="lg:w-[490px] text-[#fff] font-semibold">The junior program fosters growth, learning, and teamwork, nurturing young talents to develop skills, character, and a passion for lifelong success.</p>
+
+            <button class="btn bg-[#FF4240] text-white border-[#FF4240] lg:w-[180px]
+            h-[45px]">Rejister Now</button>
+
+          </div>
+          <div style="background-size: cover; background-image: url(Images/3.png); ;" class="bg-no-repeat my-2 h-96 px-8 py-8  lg:pt-24 lg:px-14  lg:space-y-7 space-y-3 rounded-2xl">
+            <h1 class="text-[#fff] text-2xl font-extrabold">Teaneger Program</h1>
+            <p class="lg:w-[490px] text-[#fff] font-semibold">The junior program fosters growth, learning, and teamwork,  <br> nurturing young talents to develop skills, character, and a <br> passion for lifelong success.</p>
+
+            <button class="btn bg-[#FF4240] text-white border-[#FF4240] lg:w-[180px]
+            h-[45px]">Rejister Now</button>
+
+          </div>
+        </div>
+        <div style=" background-image: url(Images/4.png); background-size: cover;" class="lg:py-32  lg:px-24 lg:mx-28 px-8 py-8 bg-no-repeat h-full space-y-3  lg:space-y-7 rounded-2xl">
+          <h1 class="text-[#fff] text-2xl font-extrabold">Teaneger Program</h1>
+          <p class="lg:w-[490px] text-[#fff] font-semibold">The junior program fosters growth, learning, and teamwork,  <br> nurturing young talents to develop skills, character, and a <br> passion for lifelong success.</p>
+
+          <button class="btn bg-[#FF4240] text-white border-[#FF4240] lg:w-[180px]
+          h-[45px]">Rejister Now</button>
+
+        </div>
+
+      </section>
       
     </main>
     <footer>
